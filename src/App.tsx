@@ -12,7 +12,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setWaterAlert(true);
-    }, 3600000); // 1 hour in milliseconds
+    }, 3600000); 
 
     return () => clearInterval(interval);
   }, []);
@@ -50,7 +50,7 @@ const App: React.FC = () => {
       )}
       <FloatingQuotes/>
       <div className="bg-white p-8 rounded-3xl shadow-2xl w-full max-w-md transform hover:scale-105 transition-transform duration-300 ease-in-out">
-        <h1 className="text-3xl font-extrabold mb-6 text-purple-600">Todo List</h1>
+        <h1 className="text-3xl font-extrabold mb-6 text-purple-600">Daily Agenda</h1>
         <TodoForm addTodo={addTodo} />
         <TodoList todos={todos} deleteTodo={deleteTodo} toggleTodo={toggleTodo} />
       </div>

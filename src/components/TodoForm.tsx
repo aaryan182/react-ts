@@ -58,7 +58,7 @@ export const TodoForm: React.FC<TodoFormProps> = ({ addTodo }) => {
         type="submit"
         className="mt-4 bg-gradient-to-r from-purple-500 to-blue-600 text-white p-3 rounded-lg w-full shadow-lg hover:from-purple-600 hover:to-blue-700 transition-colors duration-300"
       >
-        Add Todo
+        Add Agenda
       </button>
     </form>
   );
